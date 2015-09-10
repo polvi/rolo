@@ -1,0 +1,11 @@
+{"user":"admin"}
+{"user":"5ed4795b-8d05-4804-ae26-c043ee69c0d4", "readonly": true}
+{"user":"scheduler", "readonly": true, "resource": "pods"}
+{"user":"scheduler", "resource": "bindings"}
+{"user":"kubelet",  "readonly": true, "resource": "pods"}
+{"user":"kubelet",  "readonly": true, "resource": "services"}
+{"user":"kubelet",  "readonly": true, "resource": "endpoints"}
+{"user":"kubelet", "resource": "events"}
+{"user":"alice", "ns": "projectCaribou"}
+{"user":"bob", "readonly": true, "ns": "projectCaribou"}
+{"user":"polvi", "readonly": true, "ns": "test"}

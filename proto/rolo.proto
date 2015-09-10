@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package proto;
+
+// Interface exported by the server.
+service Rolo {
+  rpc Authorize(Attributes) returns (AuthorizeResp) {}
+}
+
+message Attributes {
+  string User = 1;
+  string Group = 2;
+  bool ReadOnly = 3;
+  string Resource = 4;
+  string Namespace = 5;
+}
+
+message AuthorizeResp {
+  bool Authorized = 1;
+}
